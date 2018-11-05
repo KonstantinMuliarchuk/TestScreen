@@ -54,7 +54,8 @@ const styles = {
     },
     text: {
         color: 'gray',
-        fontSize: 16
+        fontSize: 16,
+        marginBottom: 5
     },
     right: {
         position: 'absolute',
