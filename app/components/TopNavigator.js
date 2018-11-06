@@ -10,6 +10,7 @@ class TopNavigator extends Component {
     }
     handlePress = (item) => {
         this.setState({ selected: item })
+        this.props.action(item)
     }
     render() {
         const buttons = ['Undo', 'New Place', 'Post'],

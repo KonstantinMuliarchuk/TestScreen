@@ -9,12 +9,21 @@ import Rows from '../../components/rows';
 import { mainData } from './data';
 
 class MainScreen extends Component {
+    state = {
+        selected: 'Undo'
+    }
     render() {
-        const segmentControlData = ['Stock', 'Buy']
+        const segmentControlData = ['Stock', 'Buy'],
+        {selected} = this.state;
         return (
             <View style={styles.container}>
-                <TopNavigator />
-                <ImageView />
+                <TopNavigator
+                    ref='navigator'
+                    action={(item) => this.setState({ selected: item })}
+                />
+                <ImageView
+                    selected={selected}
+                />
                 <ScrollView
                     style={styles.scrolledArea}
                     showsVerticalScrollIndicator={false}

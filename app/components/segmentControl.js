@@ -38,6 +38,7 @@ const styles = {
         borderRadius: 15,
         flexDirection: 'row',
         marginVertical: 20,
+        overflow: 'hidden'
 
     },
     containerHalf: {
@@ -46,6 +47,7 @@ const styles = {
         borderRadius: 5,
         flexDirection: 'row',
         marginVertical: 5,
+        overflow: 'hidden'
     },
     buttonsContainer: {
         flex: 1,
